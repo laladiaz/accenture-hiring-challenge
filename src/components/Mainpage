@@ -1,0 +1,10 @@
+
+const Mainpage = () => {
+    return(
+        <>
+            <p> Hola mundo!</p>
+        </>
+    )
+}
+
+export default Mainpage;
