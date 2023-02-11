@@ -1,15 +1,14 @@
+import './styles/NavBar.css'
 
 const NavBar = () =>{
     return (
         <nav class="menu">
-            <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Bussiness</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Work</a></li>
-            </ul>
+                <a href="#">All</a>
+                <a href="#">Travel</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Bussiness</a>
+                <a href="#">Food</a>
+                <a href="#">Work</a>
         </nav>
     )
 }
