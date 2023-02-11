@@ -4,7 +4,7 @@ import {
   Route
 } from "react-router-dom";
 import Layout from './components/Layout'
-import Mainpage from './components/Mainpage'
+import Mainpage from './components/Views/Mainpage'
 
 
 function App() {
