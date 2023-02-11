@@ -1,9 +1,18 @@
 
-const MainGrid = () =>{
+
+const MainGrid = ({posts}) =>{
+    
+    console.log(posts);
 
     return (
-        <main>
-            grid
+        <main className="grid-posts">
+            {
+                posts.map((post)=>{
+                    <div className="div-post" key={posts.id}>
+                        <p>{post.title}</p>
+                    </div>
+                })
+            }
         </main>
     )
 }
