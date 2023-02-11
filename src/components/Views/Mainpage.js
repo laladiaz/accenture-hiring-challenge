@@ -4,7 +4,7 @@ import NavBar from "../NavBar";
 import MainGrid from "../MainGrid";
 import { useEffect, useState } from "react";
 import { axiosGet } from "../../services/api";
-import axios from 'axios';
+
 
 const Mainpage = () => {
     const [dataPosts, setDataPosts] = useState([]);
