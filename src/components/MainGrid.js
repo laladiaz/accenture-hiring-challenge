@@ -1,19 +1,17 @@
-
+import "./styles/MainGrid.css"
 
 const MainGrid = ({posts}) =>{
     
-    console.log(posts);
-
     return (
-        <main className="grid-posts">
-            {
-                posts.map((post)=>{
-                    <div className="div-post" key={posts.id}>
-                        <p>{post.title}</p>
-                    </div>
-                })
-            }
-        </main>
+        <section className="grid-posts">
+        {posts.map((post)=>(
+                <div className="post" key={post.id}>
+                    <p className="post-title">{post.title}</p>
+                    <p className="post-body">{post.body}</p>
+                </div>
+            ))
+        }
+        </section>
     )
 }
 
