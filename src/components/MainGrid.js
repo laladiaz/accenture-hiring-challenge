@@ -1,14 +1,15 @@
-import "./styles/MainGrid.css"
+import "./styles/MainGrid.css";
+import { NavLink } from 'react-router-dom';
 
 const MainGrid = ({posts}) =>{
     
     return (
         <section className="grid-posts">
         {posts.map((post)=>(
-                <div className="post" key={post.id}>
+                <NavLink to='/one-post' className="post" key={post.id}>
                     <p className="post-title">{post.title}</p>
                     <p className="post-body">{post.body}</p>
-                </div>
+                </NavLink>
             ))
         }
         </section>
